@@ -4,9 +4,84 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src="loop.js" defer></script>
 </head>
 <body>
-    
+    <script>
+        console.log("--------------first Task--------------")
+for(let num = 1; num<=10; num++){
+    console.log(num);
+}
+
+console.log("--------------Second Task--------------")
+for(let num = 2; num<20; num++){
+    if(num%2 ===0){
+        console.log(num);
+    }
+}
+console.log("--------------Third Task--------------")
+let numbers = 0;
+for(let num = 1; num<=100; num++){
+    numbers = numbers + num;
+}
+console.log(numbers);
+console.log("--------------fourth Task--------------")
+let number1 = 7;
+for(let num = 1; num<=10; num++){
+    console.log(num + "*" + 7 + "=" + num*number1);
+}
+
+console.log("--------------fifth Task--------------")
+for(let number = 20; number>0; number--){
+    console.log(number); 
+}
+
+console.log("---------------Sixth Task--------------")
+// let total = 5;
+// for(let multiply = 1; multiply<=10; multiply++){
+//     console.log(multiply*total);
+// }
+for(let num = 5; num<=50; num++){
+    if(num%5 === 0){
+        console.log(num);
+    }
+}
+
+console.log("---------------Seventh Task--------------")
+let factorial = 1;
+for(let num = 1; num<=8; num++){
+    factorial = factorial*num;
+}
+console.log(factorial); 
+
+console.log("---------------Eighth Task--------------")
+for(let star = 1; star<=6; star++){
+    console.log("*".repeat(star));
+}
+
+console.log("---------------Ninth Task--------------")
+for(let star = 6; star<=1; star--){
+    console.log("*".repeat(star));
+}
+console.log("---------------Tenth Task--------------")
+const number2 = 14;
+let isPrime = true;
+if(number2 <= 1){
+    isPrime = false;
+}
+else{
+    for(let a =2; a< Math.sqrt(number2); a++){
+        if(number2 % 2 ===0){
+            isPrime = false;
+            break;
+        }
+    }
+}
+if(isPrime){
+    console.log("The number is prime");
+}
+else{
+    console.log("The number is not prime");
+}
+    </script>
 </body>
 </html>
