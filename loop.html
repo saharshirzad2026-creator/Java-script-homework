@@ -7,7 +7,7 @@
 </head>
 <body>
     <script>
-        console.log("--------------first Task--------------")
+ console.log("--------------first Task--------------")
 for(let num = 1; num<=10; num++){
     console.log(num);
 }
@@ -82,6 +82,37 @@ if(isPrime){
 else{
     console.log("The number is not prime");
 }
+
+console.log("---------------Eleventh Task--------------")
+let output = 0;
+for(let num = 1; num<=10; num++){
+    output = output + num**2;
+}
+console.log(output);
+
+console.log("---------------Twelvth Task--------------")
+let result = 0;
+for(let num = 5; num<=90; num++){
+    if(num%9 ===0){
+        result = result + 1;
+    }
+}
+console.log(result);
+
+console.log("---------------Thirteenth Task--------------")
+const listofNumbers = [15,-19,-3,0,8,12,-7,4];
+let positiveNumbers = 0;
+let nagativeNumbers = 0;
+for(let numbers = 0; numbers<listofNumbers.length; numbers++){
+    if(listofNumbers[numbers] > 0){
+        positiveNumbers = positiveNumbers + 1;
+    }
+    else if(listofNumbers[numbers] < 0){
+        nagativeNumbers = nagativeNumbers + 1;
+    }
+}
+console.log("positive " + positiveNumbers);
+console.log("nagative " + nagativeNumbers);
     </script>
 </body>
 </html>
