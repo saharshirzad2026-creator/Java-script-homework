@@ -31,6 +31,39 @@ while(true){
 }
 
 console.log("---------------Third Task--------------")
+    let number = 1;
+        do{
+            if(number%2 === 0){
+                console.log(number);
+            }
+            number++;
+        }while(number<=10);
+
+console.log("---------------Fourth Task--------------")
+        const password = "aBc9";
+        let hasletter = false;
+        let hasNumber = false;
+        if(password.length<4){
+            console.log("The password length is unvalid");
+        }
+        else{
+            let i = 0;
+            do{
+                if(password[i]>="a" && password[i]<="z" || password[i]>="A" && password[i]<="Z"){
+                    hasletter = true;
+                }
+                else if(password[i]>= "0" && password[i]<= "9"){
+                    hasNumber = true;
+                }
+                i++;
+            }while(i<password.length);
+            if(hasletter && hasNumber){
+                console.log("The password is valid");
+            }
+            else{
+                console.log("The password is unvalid");
+            }
+        }
     </script>
 </body>
 </html>

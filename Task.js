@@ -303,7 +303,7 @@ switch(days){
         break;
     case "دو شنبه":
         console.log("دو شنبه یک روز کاری است");
-        break;
+        break; 
     case "سه شنبه":
         console.log("سه شنبه یک روز کاری است");
         break;

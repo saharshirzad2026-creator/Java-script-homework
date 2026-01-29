@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Rested parameter   
+        function sum(...number){
+            let result = 0;
+            for(let num = 0; num<number.length; num++){
+                result = result + number[num];
+            }
+            console.log(result);
+        }
+        sum(1,2,3,4,5,6,7,8,9);
+
+console.log("---------------First Task--------------")
+        function numbers(number1, number2){
+            const result = number1 + number2;
+            return result;
+        }
+        const output = numbers(45,39);
+    
+        const greeting = ()=>{
+            return "Hello everyone";
+        }
+        const message = greeting();
+
+console.log("---------------Second Task--------------")
+        function numbers(number){
+            return number ** 2;
+        }
+        const result = numbers(8);
+
+console.log("---------------Third Task--------------")
+        const max = function(num1, num2){
+            if(num1 === num2){
+                console.log("The numbers are equals");
+            }
+            else if(num1 > num2){
+                console.log("The first number is bigger");
+            }
+            else{
+                console.log("The second number is bigger");
+            }
+        }
+        max(45,63);
+
+console.log("---------------Fourth Task--------------")
+        function greeting1(name, lastName){
+            console.log(`Hi dear, ${name} ${lastName} , welcome`);
+        }
+        greeting1("Mehran", "Safavi");
+
+console.log("---------------Fifth Task--------------")
+       const numbers1 = (num)=>{
+        if(num%2){
+            console.log("The number is even");
+        }
+        else{
+            console.log("The number is odd");
+        }
+       }
+       numbers1(8);
+
+console.log("---------------Sixth Task--------------")
+       function tempreture(degree){
+        console.log((degree *9/5) / 5 + 32 + " " + "faranhite");
+       }
+       tempreture(-8);
+
+console.log("---------------Seventh Task--------------")
+       function factorial(num){
+        let total = 1;
+        for(let num1 = 1; num1<=num; num1++){
+            total *= num1;
+        }
+        console.log(total);
+       }
+       factorial(4);
+
+console.log("---------------Eighth Task--------------")
+       function reverse(text){
+        let reverse1 = "";
+        for(let a = text.length - 1; a>=0; a--){
+            reverse1 = reverse1 + text[a];
+        }
+        return reverse1;
+       }
+       const newtext =  reverse("Hello");
+    </script>
+</body>
+</html>
