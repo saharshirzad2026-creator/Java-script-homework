@@ -91,6 +91,44 @@ console.log("---------------Eighth Task--------------")
         return reverse1;
        }
        const newtext =  reverse("Hello");
+
+console.log("---------------Ninth Task--------------")
+       function sum(...num){
+           let total = 0;
+           for(let number = 0; number<num.length; number++){
+               total += num[number];
+           }
+           console.log(total);
+       }
+       sum(4,9,3,38,3);
+
+console.log("---------------Tenth Task--------------")
+        const prime = (number)=>{
+            let isPrime = true;
+            if(number <= 1){
+                isPrime = false;
+            }
+            else{
+                for(let num = 2; num< Math.sqrt(number); num++){
+                    if(number%num ===0){
+                        isPrime = false;
+                        break;
+                    }
+                }
+                return isPrime;
+            }
+        }
+        const natija = prime(12);
+
+console.log("---------------Tenth Task--------------")
+        function anagram(firstLetter,secondLetter){
+            let string1 = firstLetter.replace(/\s/g,'').toLowerCase();
+            let string2 = secondLetter.replace(/\s/g,'').toLowerCase();
+            return string1.split("").sort().join("") === string2.split("").sort().join("");
+        }
+        console.log(anagram('listen', 'Silent'));
+        console.log(anagram('world', 'hello'));
+        console.log(anagram('Dormitory', 'Dirty room'));
     </script>
 </body>
 </html>
