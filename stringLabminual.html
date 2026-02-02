@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("---------------First Task--------------")
+        function getString(text){
+            let result = "";
+            for(let string = 0; string<text.length; string++){
+                if(text[string]>="a" && text[string]<="z" || text[string]>="A" && text[string]<="Z"){
+                    result += text[string];
+                }
+            }
+            return result;
+        }
+        console.log(getString("Hello an54d good 65 night everyone 12357"));
+
+console.log("---------------Second Task--------------")
+        function changeToSnakeCase(text){
+            let output = "";
+            for(let str = 0; str<text.length; str++){
+                if(text[str]>="A" && text[str]<="Z"){
+                    output += "_" + text[str].toLowerCase();
+                }
+                else{
+                    output += text[str];
+                }
+            }
+            return output;
+        }
+        console.log(changeToSnakeCase("fatherInLaw"));
+
+console.log("---------------Thirth Task--------------")
+        function deleteSimiler(text){
+            let output = "";
+            for(let str = 0; str<text.length; str++){
+                if(text[str] !== text[str-1]){
+                    output += text[str];
+                }
+            }
+            return output;
+        }
+        console.log(deleteSimiler("bookkeeper"));
+    </script>
+</body>
+</html>
