@@ -161,6 +161,20 @@ console.log("---------------Twelveth Task--------------")
             return count;
         }
         console.log(texts("Hello and good morning everyone"));
+
+console.log("---------------Thirteenth Task--------------")
+        function findAverage(...numbers){
+            let count = 0;
+            let total = 0;
+            for(let num = 0; num<numbers.length; num++){
+                if(numbers[num]>0){
+                    count++;
+                    total += numbers[num];
+                }
+            }
+            return total/count;
+        }
+        findAverage(6,4,8,-2,7,3,-4,29,1);
     </script>
 </body>
 </html>
