@@ -129,6 +129,38 @@ console.log("---------------Tenth Task--------------")
         console.log(anagram('listen', 'Silent'));
         console.log(anagram('world', 'hello'));
         console.log(anagram('Dormitory', 'Dirty room'));
+
+console.log("---------------Eleventh Task--------------")
+        function numbers(...nums){
+            let max = nums[0];
+            let min = nums[0];
+            for(let num = 0; num<nums.length; num++){
+                if(nums[num]>max){
+                    max = nums[num];
+                }
+                else if(nums[num]<min){
+                    min = nums[num];
+                }
+            }
+            return{minimum: min, maximum: max}
+        }
+        console.log(numbers(2,3,5,7));
+
+console.log("---------------Twelveth Task--------------")
+        function texts(text){
+            let count = {};
+            for(let letter = 0; letter<text.length; letter++){
+                const character = text[letter];
+                if(count[character]){
+                    count[character]++;
+                }
+                else{
+                    count[character]=1;
+                }
+            }
+            return count;
+        }
+        console.log(texts("Hello and good morning everyone"));
     </script>
 </body>
 </html>
