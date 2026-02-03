@@ -45,6 +45,27 @@ console.log("---------------Thirth Task--------------")
             return output;
         }
         console.log(deleteSimiler("bookkeeper"));
+
+console.log("---------------Thirth Task--------------")
+        function deleteSpace(text){
+            let start = 0;
+            let end = text.length-1;
+            for(let string = 0; string<text.length; string++){
+                if(text[string] !== " "){
+                    start = string;
+                    break;
+                }
+            }
+            for(let string = text.length-1; string>=0; string--){
+                if(text[string] !== " "){
+                    end = string;
+                    break;
+                }
+            }
+            return text.slice(start, end+1);
+        }
+        console.log(deleteSpace("   Hello world   "));
+
     </script>
 </body>
 </html>
