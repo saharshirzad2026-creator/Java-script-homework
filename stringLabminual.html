@@ -66,6 +66,22 @@ console.log("---------------Thirth Task--------------")
         }
         console.log(deleteSpace("   Hello world   "));
 
+console.log("---------------Fourth Task--------------")
+        function reverseString(text){
+            let result = text.split(' ').map(word=>{
+            let reverse = "";
+        for(let string = word.length-1; string>=0; string--){
+               reverse += word[string];
+}
+        return reverse;
+}).join(" ");
+
+        return result;
+}
+console.log(reverseString("In the name of Allah"));
+
+console.log("---------------Fifth Task--------------")
+        const outcome = "Hello   How are  you doing?".replaceAll("   ", " ");
     </script>
 </body>
 </html>
