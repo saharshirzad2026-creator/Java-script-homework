@@ -82,6 +82,22 @@ console.log(reverseString("In the name of Allah"));
 
 console.log("---------------Fifth Task--------------")
         const outcome = "Hello   How are  you doing?".replaceAll("   ", " ");
+
+console.log("---------------Sixth Task--------------")
+        function texts(text){
+            let count = {};
+            for(let letter = 0; letter<text.length; letter++){
+                const character = text[letter];
+                if(count[character]){
+                    count[character]++;
+                }
+                else{
+                    count[character]=1;
+                }
+            }
+            return count;
+        }
+        console.log(texts("Hello and good morning everyone"));
     </script>
 </body>
 </html>
