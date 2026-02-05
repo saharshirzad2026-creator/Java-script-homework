@@ -104,6 +104,16 @@ console.log("---------------Join--------------")
         let output2 =  allFruits2.join("_");
         let allFruits3 = ["Apple","strawberries","Apricot","Pomegranate"];
         let output3 = allFruits3.join(" ");
+
+
+console.log("---------------ForEach--------------")
+        let total = 0;
+        const listOfNumber = [4,7,8,9,3,4,5,3,2,1];
+        function getNumber(number){
+                total += number;
+        }
+        listOfNumber.forEach(getNumber);
+        console.log(total);
     </script>
 </body>
 </html>
