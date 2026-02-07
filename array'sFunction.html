@@ -150,6 +150,13 @@ console.log("---------------Filter--------------")
                 return num%2 ===0;
         }
         const newNumbers = nums.filter(getNumber);
+
+        
+        const listOfPeople = ["Farzam","Mustafa","Mahdi","Maria","Arifa"];
+        function getNmaes(name){
+                return name.includes("r");
+        }
+        const filteredPeople = listOfPeople.filter(getNmaes);
     </script>
 </body>
 </html>
