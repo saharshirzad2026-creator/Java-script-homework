@@ -114,6 +114,38 @@ console.log("---------------ForEach--------------")
         }
         listOfNumber.forEach(getNumber);
         console.log(total);
+        
+        function greeting(number){
+                console.log(`This is number ${number}`);
+        }
+        const list = [1,2,3,4,5,6];
+        list.forEach(greeting);
+
+        
+
+
+console.log("---------------Map--------------")
+        const prices = [200,540,674,983,700];
+        const tax = 0.03;
+        const total1 = prices.map(getPrice);
+        function getPrice(price){
+                return price * tax + price;
+        }
+
+        const salaries = [12000,9000,20000,15000,4000];
+        const finalSalary = salaries.map(getSalary);
+        function getSalary(salary){
+                return salary + 1000;
+        }
+
+console.log("---------------Filter--------------")
+        const grades = [50,80,30,90,67,24,45,100];
+        function score(grade){
+                return grade>=60 && grade<=100;
+        }
+        const getScores = grades.filter(score);
+
+
     </script>
 </body>
 </html>
