@@ -157,6 +157,19 @@ console.log("---------------Filter--------------")
                 return name.includes("r");
         }
         const filteredPeople = listOfPeople.filter(getNmaes);
+
+console.log("---------------Find--------------")
+        const numbers1 = [9,4,3,5,6,7,2,8];
+        function getNumber1(num){
+                return num%2 ===0;
+        }
+        const find = numbers1.find(getNumber1);
+
+        const people = ["Ali","Ahmad","Emran","Amir","Fariba"];
+        function names1(name){
+                return name.includes("A");
+        }
+        const filteredNames = people.find(names1);
     </script>
 </body>
 </html>
