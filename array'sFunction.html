@@ -158,6 +158,12 @@ console.log("---------------Filter--------------")
         }
         const filteredPeople = listOfPeople.filter(getNmaes);
 
+        const scores = [67,94,35,100,20,48,100,89,100];
+        function getScore(score){
+                return score === 100;
+        }
+        const newScores = scores.filter(getScore);
+
 console.log("---------------Find--------------")
         const numbers1 = [9,4,3,5,6,7,2,8];
         function getNumber1(num){
@@ -178,6 +184,12 @@ console.log("---------------FindIndex--------------")
                 return name>2;
         }
         const newPeople = listOfPeople2.findIndex(people2);
+
+        const listOfNums = [8,4,5,9,2,1,4,3];
+        function nums(num){
+                return num<3;
+        }
+        const newNumber = listOfNums.findIndex(nums);
 
 console.log("---------------Some--------------")
          const prices2 = [500,300,940,702,410,158,];
