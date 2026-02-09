@@ -222,6 +222,18 @@ console.log("---------------Every--------------")
                 return last;
         }
         const output4 = lastNames.every(lastName);
+
+console.log("---------------Reduce--------------")
+        const listOfNums1 = [2,5,6,9,8,4,6,1];
+        const outcome = listOfNums1.reduce(function(curent,item){
+                return curent + item;
+        },0);
+
+console.log("---------------Reduce_right--------------")
+        const multiply = [4,9,5,8,3,7,1,6];
+        const outcome1 = multiply.reduceRight(function(curent,mult){
+                return curent * mult;
+        },1);
     </script> 
 </body>
 </html>
