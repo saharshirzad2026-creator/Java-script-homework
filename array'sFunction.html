@@ -203,6 +203,25 @@ console.log("---------------Some--------------")
         else{
                 console.log("We don't have anything for you that you buy it");
         }
+
+console.log("---------------Every--------------")
+        const secondNumbers = [4,8,3,7,2,5,78,25];
+        function getNumbers(num){
+                return num>1;
+        }
+        const result4 = secondNumbers.every(getNumbers);
+
+        const humans = ["Ali","Hamid","Zainab","Hadi","Emran","Zarin"];
+        function getHumans(human){
+                return human.includes("a");
+        }
+        const result5 = humans.every(getHumans);
+
+        const lastNames1 = ["Ahmadi","Hashimi","Qasimi"];
+        function lastName(last){
+                return last;
+        }
+        const output4 = lastNames.every(lastName);
     </script> 
 </body>
 </html>
