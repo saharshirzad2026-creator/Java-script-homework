@@ -140,6 +140,23 @@ console.log("---------------Entries--------------")
 
         const information = [["name","Nargis"],["lastName","Gholami"],["age",20],["score",78],["gender","Female"]];
         const outcome = Object.fromEntries(information);
+
+console.log("---------------Assign--------------")
+        personInfo = {
+            name: "Kabir",
+            lastName: "Muradi",
+        }
+        const extraInfo = {
+            age: 31,
+            job: "Pilot",
+            gender: "Male",
+        }
+        const familyInfo = {
+            fatherName: "Mohammad Ali",
+            motherName: "Freshta",
+            brotherName: "Bahram",
+        }
+        Object.assign(personInfo,extraInfo,familyInfo);
     </script>
 </body>
 </html>
