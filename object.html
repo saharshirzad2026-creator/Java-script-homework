@@ -62,6 +62,27 @@ console.log("---------------ForIn--------------")
         for(let key in motorInformation){
             console.log(key);
         }
+
+
+console.log("---------------ForOf--------------")
+        const list = [4,5,6,3,2,8,9];
+        let number = 0;
+        let total = 0;
+        while(number<list.length){
+            total += list[number];
+            number++;
+        }
+        let sum = 0;
+        for(let num = 0; num<list.length; num++){
+            sum += list[num];
+        }
+        console.log(sum);
+
+        let result = 0;
+        for(let num of list){
+            result += num;
+        }
+        console.log(result);
     </script>
 </body>
 </html>
