@@ -125,6 +125,21 @@ console.log("---------------Values--------------")
             isMaried: "true",
         }
         console.log(Object.values(fourthPerson));
+
+console.log("---------------Entries--------------")
+        const fifthPerson = {
+            name: "Mahsa",
+            lastName: "Rezaie",
+            age: 18,
+            gender: "Female",
+            job: "Student",
+            isMaried: "false",
+        }
+        const output = Object.entries(fifthPerson);
+        const output1 = Object.fromEntries(output);
+
+        const information = [["name","Nargis"],["lastName","Gholami"],["age",20],["score",78],["gender","Female"]];
+        const outcome = Object.fromEntries(information);
     </script>
 </body>
 </html>
