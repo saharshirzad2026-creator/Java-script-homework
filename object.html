@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+console.log("---------------Object--------------")
+       const person = {
+        name: "Farzad",
+        lastName: "Farzin",
+        age: 29,
+        gender: "male",
+       }
+       person["name"] = "Farhad";
+       person.lastName
+       person.score = 100;
+       delete person.age;
+
+       const SecondPerson = {
+        name: "Mahsa",
+        lastName: "Rezaie",
+        age: 20,
+        greeting: function(){
+            console.log(`Hello you are ${this.name} your lastName is ${this.lastName} and also you are ${this.age}years old`);
+        }
+       }
+
+console.log("---------------ForIn--------------")
+        const mobileInformation = {
+            model: "Iphone",
+            hardDisk: "228GB",
+            RAM: "5GB",
+            color: "orange",
+            price: "80000AFG",
+        }
+        for(let key in mobileInformation){
+            console.log(key);
+        }
+        const computerInfo = {
+            company: "Dell",
+            model: "Latitude 7654",
+            monitor: "HD 1200x800",
+            RAM: "8GB",
+            hardDisk: "1024GB",
+        }
+        console.log(computerInfo["company"]);
+        console.log(computerInfo["model"]);
+        console.log(computerInfo["monitor"]);
+        console.log(computerInfo["RAM"]);
+        console.log(computerInfo["hardDisk"]);
+
+        const motorInformation = {
+            company: "honda",
+            model: "2025",
+            name: "honda",
+            color: "red",
+            price: "70000",
+        }
+        for(let key in motorInformation){
+            console.log(key);
+        }
+console.log("---------------ForOf--------------")
+        const list = [4,5,6,3,2,8,9];
+        let number = 0;
+        let total = 0;
+        while(number<list.length){
+            total += list[number];
+            number++;
+        }
+        let sum = 0;
+        for(let num = 0; num<list.length; num++){
+            sum += list[num];
+        }
+        console.log(sum);
+
+        let result = 0;
+        for(let num of list){
+            result += num;
+        }
+        console.log(result);
+
+console.log("---------------Keys--------------")
+        const personInformation = {
+            name: "Armin",
+            lastName: "Panahi",
+            age: 30,
+            gender: "male",
+            job: "doctor",
+            isMaried: "true"
+        }
+        console.log(Object.keys(personInformation));
+
+        const secondPerson = {
+            name: "Nafas",
+            lastName: "Nagafi",
+            age: 22,
+            job: "Nurse",
+            gender: "Female",
+            isMaried: "false",
+        }
+        console.log(Object.keys(secondPerson));
+
+console.log("---------------Values--------------")
+        const thirdPerson = {
+            name: "Ali",
+            lastName: "Ahmadi",
+            age: 28,
+            gender: "Male",
+            job: "Policeman",
+            isMaried: "false",
+        }
+        console.log(Object.values(thirdPerson));
+
+        const fourthPerson = {
+            name: "Mehran",
+            lastName: "Safavi",
+            age: 26,
+            gender: "Male",
+            job: "Teacher",
+            isMaried: "true",
+        }
+        console.log(Object.values(fourthPerson));
+
+console.log("---------------Entries--------------")
+        const fifthPerson = {
+            name: "Mahsa",
+            lastName: "Rezaie",
+            age: 18,
+            gender: "Female",
+            job: "Student",
+            isMaried: "false",
+        }
+        const output = Object.entries(fifthPerson);
+        const output1 = Object.fromEntries(output);
+
+        const information = [["name","Nargis"],["lastName","Gholami"],["age",20],["score",78],["gender","Female"]];
+        const outcome = Object.fromEntries(information);
+
+console.log("---------------Assign--------------")
+        personInfo = {
+            name: "Kabir",
+            lastName: "Muradi",
+        }
+        const extraInfo = {
+            age: 31,
+            job: "Pilot",
+            gender: "Male",
+        }
+        const familyInfo = {
+            fatherName: "Mohammad Ali",
+            motherName: "Freshta",
+            brotherName: "Bahram",
+        }
+        Object.assign(personInfo,extraInfo,familyInfo);
+    </script>
+</body>
+</html>
