@@ -252,6 +252,21 @@ console.log("---------------IsSealed--------------")
             gender: "Female",
         }
         const result3 = Object.isSealed(ninthPerson);
+
+ const anotherPerson = {
+            name: "Karim",
+            lastName: "Taheri",
+            age: 32,
+            score: 56,
+            gender: "Male",
+        }
+        Object.seal(anotherPerson);
+        if(!Object.isSealed(anotherPerson)){
+            anotherPerson.name = "Vahid";
+        }
+        else{
+            console.log("Object is sealed");
+        }
     </script> 
 </body>
 </html>
