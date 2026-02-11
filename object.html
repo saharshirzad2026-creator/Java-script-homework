@@ -267,6 +267,37 @@ console.log("---------------IsSealed--------------")
         else{
             console.log("Object is sealed");
         }
+
+                const listOfStudents = [
+            {
+                name: "Maryam",
+                lastName: "Qurbani",
+                age: 17,
+                score: 78,
+            },
+            {
+                name: "Maria",
+                lastName: "Qasimi",
+                age: 19,
+                score: 89,
+            },
+            {
+                name: "Mahsa",
+                lastName: "Habibi",
+                age: 15,
+                score: 89,
+            },
+            {
+                name: "Rayan",
+                lastName: "Akbari",
+                age: 34,
+                score: 100,
+            },
+        ];
+        for(let value of listOfStudents){
+            Object.freeze(value);
+        }
+        listOfStudents[0].age = 36;
     </script> 
 </body>
 </html>
