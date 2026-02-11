@@ -190,6 +190,23 @@ console.log("---------------Freeze--------------")
             gender: "Female"
         }
         const result4 = Object.freeze(nextPerson);
+
+console.log("---------------IsFrozen--------------")
+        const seventhPerson = {
+            name: "Aslan",
+            lastName: "Arsalan",
+            age: 78,
+            score: 24,
+            gender: "Male",
+        }
+        const freezeObject = Object.isFrozen(seventhPerson);
+
+        const carInformation = {
+            name: "Felder",
+            color: "White",
+            price: "$2000000",
+        }
+        const result5 = Object.isFrozen(carInformation);
     </script> 
 </body>
 </html>
