@@ -207,6 +207,23 @@ console.log("---------------IsFrozen--------------")
             price: "$2000000",
         }
         const result5 = Object.isFrozen(carInformation);
+
+                const computerInformation = {
+            company: "Toshiba",
+            model: 7654,
+            RAM: "16GB",
+            hardDisk: "512GB",
+            color: "black",
+            price: "13000AFG",
+            nasl: 5,
+        }
+        Object.freeze(computerInformation);
+        if(!Object.isFrozen(computerInformation)){
+            computerInformation.color = "Selver";
+        }
+        else{
+            console.log("Object is Frozen");
+        }
     </script> 
 </body>
 </html>
