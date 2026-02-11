@@ -170,8 +170,26 @@ console.log("---------------Create--------------")
                 writable: false,
                 enumerable: false,
             }
-        })
+        });
 
+console.log("---------------Freeze--------------")
+        const sixthPerson = {
+            name: "Emran",
+            lastName: "Hashimi",
+            age: 19,
+            score: 98,
+            gender: "Male"
+        }
+        const result1 = Object.freeze(sixthPerson);
+
+        const nextPerson = {
+            name: "Huma",
+            lastName: "Yavari",
+            age: 20,
+            score: 100,
+            gender: "Female"
+        }
+        const result4 = Object.freeze(nextPerson);
     </script> 
 </body>
 </html>
