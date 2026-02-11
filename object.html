@@ -224,6 +224,24 @@ console.log("---------------IsFrozen--------------")
         else{
             console.log("Object is Frozen");
         }
+
+console.log("---------------Seal--------------")
+            const eigthPerson = {
+            name: "Elif",
+            lastName: "Ehsani",
+            age: 36,
+            score: 86,
+            gender: "Female",
+        }
+        const result2 = Object.seal(eigthPerson);
+
+        const aliInformation = {
+            name: "Ali",
+            lastName: "Merzaie",
+            age: 36,
+            score: 71,
+            gender: "Male",
+        }
     </script> 
 </body>
 </html>
