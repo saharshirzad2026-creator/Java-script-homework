@@ -20,7 +20,7 @@ console.log("---------------Object--------------")
        delete person.age;
 
        const SecondPerson = {
-        name: "Mahsa",
+        name: "Mahsa", 
         lastName: "Rezaie",
         age: 20,
         greeting: function(){
@@ -157,6 +157,21 @@ console.log("---------------Assign--------------")
             brotherName: "Bahram",
         }
         Object.assign(personInfo,extraInfo,familyInfo);
-    </script>
+
+console.log("---------------Create--------------")
+        const newPerson = Object.create(null, {
+            name: {
+                value: "Fatima",
+                writable: true,
+                enumerable: true,
+            },
+            lastName: {
+                value: "Rezaie",
+                writable: false,
+                enumerable: false,
+            }
+        })
+
+    </script> 
 </body>
 </html>
