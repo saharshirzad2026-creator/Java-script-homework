@@ -21,7 +21,7 @@ function secondFunction(){
         for(let num = 0; num < number; num++){
             for(let secondNum = 0; secondNum < number; secondNum++){
                 for(let thirdNum = 0; thirdNum < number; thirdNum++){
-                    sum += num + secondNum + thirdNum
+                    sum += num + secondNum + thirdNum;
                 }
             }
         }
